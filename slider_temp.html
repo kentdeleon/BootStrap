@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Slider Temp</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="stylesheet"  href="css/bootstrap.min.css">
+	<style>
+		#the-slider img{width:100%;}
+		.carousel-indicators li{border:1px solid #e6e6e6; border-radius:1em; width:7%; height:5px; }
+		.carousel-indicators li:hover{ border:1px solid orange;
+			background-color:orange; width:7%; height:5px;}
+		.carousel-indicators .active{border:1px solid orange;background-color:orange;   width:7%; height:5px;
+			margin-bottom: 0.1%}
+
+			/*margin-bottom:0.2%; if container */
+			/*margin-bottom:0.1%; of container-fluid */
+
+		.carousel-indicators #red1.active, .carousel-indicators #red1:hover{border:1px solid #e6e6e6;background-color:#e6e6e6;}
+		.carousel-control:focus, .carousel-control:hover{color: rgba(238, 162, 54, 1); }
+
+	    .carousel-control{color:rgba(238, 162, 54, 1); opacity:0.5;}
+
+	    .carousel-caption{color:orange;}
+	    .carousel-caption h3{font-weight:bold;}
+	    .carousel-caption p{font-style:italic;}
+	    .borders{border:1px solid black; width:auto; padding:0px;}
+	    .carousel{interval: false;}
+
+	</style>
+</head>
+<body>
+
+<div class="container-fluid">
+<div class=" row ">
+
+	<div id="the-slider" class="carousel slide" data-ride="carousel">
+
+		<ol class="carousel-indicators">
+			
+			
+			
+			<li id="red1" data-target="#the-slider" data-slide-to="0" class="active"></li>
+			
+			
+			<li data-target="#the-slider" data-slide-to="1"></li>
+			
+			<li data-target="#the-slider" data-slide-to="2"></li>
+			
+			
+			
+		</ol> <!--end carousel-indicators-->
+
+
+		<div class="carousel-inner">
+
+			<div class="item active">
+				<img src="images/painting.jpg" alt="item1">
+				<div class="carousel-caption">
+							<h3>Pokemon Shirt</h3>
+							<p>pokemon caption.</p>
+				</div>
+			</div> <!--item 1-->
+
+			<div class="item">
+				<img src="images/highway.jpg" alt="item2">
+				<div class="carousel-caption">
+							<h3>Justice League Shirt</h3>
+							<p>justice league caption.</p>
+				</div>
+			</div> <!--item 2-->
+
+			<div class="item">
+				<img src="images/river.jpg" alt="item3">
+				<div class="carousel-caption">
+							<h3>Full Metal Alchemist Shirt</h3>
+							<a href="#" ><p>Full Metal Alchemist caption.</p></a>
+				</div>
+			</div> <!--item 3-->
+
+		</div> <!--end carousel-inner-->
+
+		<a class="left carousel-control" role="button" data-slide="prev" href="#the-slider">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+		</a>
+
+		<a class="right carousel-control" role="button" data-slide="next" href="#the-slider">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+		</a>
+
+			
+	</div>
+</div><!--end row-->
+</div> <!--end container-->
+<!--script-->
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
+
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
